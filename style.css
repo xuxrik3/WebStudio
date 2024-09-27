@@ -7,3 +7,27 @@
 header{
     display: inline-block;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+header{
+  background-color: #ECECEC;
+}
+
+section {
+  padding-top: 25px;
+  padding-bottom: 25px; 
+}
+
+
+.content-up{
+  background-color: #2F303A;
+}
+.my_teams{
+  background-color:#F5F4FA ;
+}
+footer{
+  background-color: #2F303A;
+}
