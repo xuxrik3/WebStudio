@@ -11,96 +11,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-        <a href="./index.html">WebStudio</a>
+  <!-- <div class="container header-wrap"> -->
+    <header class="header"> 
+      <div class="container header-wrap">
+        <a class="logo" href="./index.html">WebStudio</a>
         <nav>
-          <ul>
-            <li><a href="/index.html">Студія</a></li>
-            <li><a href="./pages/portfolio.html">Портфоліо</a></li>
-            <li><a href="#">Контакти</a></li>
+          <ul class="header-list">
+            <li class="header-item"><a href="/index.html">Студія</a></li>
+            <li class="header-item"><a href="./pages/portfolio.html">Портфоліо</a></li>
+            <li class="header-item"><a href="#">Контакти</a></li>
           </ul>
-        </nav>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+380 96 111 11 11</a></li>
-        </ul>
-      </div>
-      </header>
+        </nav>  
+          <ul class="header-list">
+            <li class="header-item"><a href="tel:+380961111111">+380 96 111 11 11</a></li>
+            <li class="header-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>    
+      </div> 
+    </header>
+    <!-- </div> -->
+     
   <main>
     <!-- Шапка -->
+    <div class="container">
       <section class="content-up">
-        <div class="container">
         <h2>Ефективні рішення для вашого бізнесу</h2>
         <button type="button">Замовити послугу</button>
       </section>
+ 
       <!-- Особливості -->
-      <section>
-     <ul>
-      <li>
+      <section class="services container">
+     <ul  class="services-list">
+      <li class="services-item">
         <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
         <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
       </li>
-      <li>
+      <li class="services-item">
         <h3>ПУНКТУАЛЬНІСТЬ</h3>
         <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
       </li>
-      <li>
+      <li class="services-item">
         <h3>ПЛАНУВАННЯ</h3>
         <p>Так само консультація з широким активом значною мірою зумовлює.</p>
       </li>
-      <li>
+      <li class="services-item">
         <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
       </li>
      </ul>
-    </div>
       </section>
+    </div> 
       <!-- Чим займаємось -->
-      <section>
+    <div class="container"> 
+      <section class="foto">  
         <h2>Чим ми займаємося</h2>
-        <ul>
+        <ul >
           <li><img src="./img/tegi.jpg" alt="пише код"></li>
           <li><img src="./img/telfon.png" alt="структура телефона"></li>
           <li><img src="./img/tablet.png" alt="планшет"></li>
         </ul>
       </section> 
-      <!-- Наша комaнда -->
-      <section class="my_teams"> 
-        <div class="container">
+    </div> 
+      <!-- Наша комaнда --> 
+    <div class="container">  
+      <section class="my_teams">   
         <h2>Наша команда</h2>
-        <ul>
+        <ul >
             <li>
-                <img src="./img/igor.png" alt="Ігорь">
+                <img src="./img/igor.png" alt="Ігорь" width="270px" height="260px">
                 <h3>Ігор Дем'яненко</h3>
                 <p>Product Designer</p>
             </li>
             <li>
-              <img src="./img/olga.png" alt="Ольга">
+              <img src="./img/olga.png" alt="Ольга" width="270px" height="260px">
               <h3>Ольга Рєпіна</h3>
               <p>Frontend Developer</p>
           </li>
           <li>
-            <img src="./img/mikola.png" alt="Микола">
+            <img src="./img/mikola.png" alt="Микола" width="270px" height="260px"> 
             <h3>Микола Тарасов</h3>
             <p>Marketing</p>
         </li>
         <li>
-          <img src="./img/mihail.png" alt="Михайло">
+          <img src="./img/mihail.png" alt="Михайло" width="270px" height="260px">
           <h3>Михайло Єрмаков</h3>
           <p>UI Designer</p>
-      </li>
-        </ul>
-       </div> 
-      </section>
-</main>
+        </li>
+        </ul> 
+     </section>
+    </div> 
+   </main>
 
 <footer>
 <div class="container">
   <a href="./index.html">WebStudio</a>
   <address>
-    <a href="https://maps.app.goo.gl/1scr2Ax1geKc9xeD9" >м. Київ, пр-т Лесі Українки, 26</a>
     <ul>
+      <li><a href="https://maps.app.goo.gl/1scr2Ax1geKc9xeD9" >м. Київ, пр-т Лесі Українки, 26</a></li>
       <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
       <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>

@@ -4,30 +4,154 @@
   box-sizing: border-box;
 }
 
-header{
-    display: inline-block;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
+  /* width: 90%;
+  max-width: 1200px; */
   width: 1200px;
+  padding: 0 10px;
   margin: 0 auto;
-  padding: 0 auto;
-}
-header{
-  background-color: #ECECEC;
 }
 
-section {
-  padding-top: 25px;
-  padding-bottom: 25px; 
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
 
-.content-up{
+nav {
+  display: flex;
+}
+
+.header-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.header-wrap{
+  display: flex; /* робить контейнер гнучким */
+  align-items: center;  /* розміщує ПО ГОРИЗОНТАЛІ*/
+  justify-content: space-between;/* */
+}
+.header-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-item a:hover {
+  color: #007BFF;
+}
+
+.header-list:last-of-type {
+  gap: 30px;
+}
+
+.header-item a {
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column; 
+}
+
+.content-up {
   background-color: #2F303A;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
-.my_teams{
-  background-color:#F5F4FA ;
+.services-list{
+  display: flex;
+  flex-wrap: wrap;
 }
-footer{
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.services-list{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.services-item{
+  margin-right: 70px;
+  margin-bottom: 100px ;
+  max-width: 350px;
+}
+.services-item:nth-last-child(3n) {
+  margin-right: 0;
+}
+.services{
+  margin-bottom: 100px;
+}
+/* Чим займаємось  */
+.foto{
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.foto ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* .foto li{
+  display: flex;
+  flex-wrap: nowrap;
+} */
+
+/* Наша комaнда */
+.my_teams {
+  background-color: #F5F4FA;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.my_teams ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: space-between; 
+}
+
+.my_teams li {
+  margin: 10px; 
+  text-align: center; 
+}
+
+footer {
   background-color: #2F303A;
+  color: white;
+  padding: 20px 0;
+  text-align: left;
 }
