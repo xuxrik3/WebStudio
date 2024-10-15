@@ -77,14 +77,11 @@ main {
 .content-up {
   background-color: #2F303A;
   color: white;
-  padding: 40px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
-.services-list{
-  display: flex;
-  flex-wrap: wrap;
-}
-button {
+
+.button1 {
   background-color: #007BFF;
   color: white;
   padding: 10px 20px;
@@ -93,18 +90,30 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button1:hover {
   background-color: #0056b3;
 }
-
+.services-list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .services-list{
   display: flex;
   flex-wrap: nowrap;
 }
 .services-item{
-  margin-right: 70px;
-  margin-bottom: 100px ;
+  /* margin-right: 15px; */
+  /* margin-bottom: 100px ; */
   max-width: 350px;
+  /* padding: auto; */
+  margin: 10px 30px 10px 10px;
+}
+.services-item-h3{
+  color: #212121;
+}
+.services-item-a{
+  color: #757575;
+  font-size: 14px;
 }
 .services-item:nth-last-child(3n) {
   margin-right: 0;
@@ -154,4 +163,35 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: left;
+}
+
+
+
+/* PORTFOLIO */
+
+.figures{
+margin-left: 300px;
+}
+.button-pt{
+  background-color: #F5F4FA;
+  color: #212121;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 27px;
+}
+.button-pt:hover{
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+.my-shop{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.my-shop ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
