@@ -3,6 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --header-bg-color: #fff;  /* колір фона заголовка */
+  --header-text-color: #333; /* колір заголовка */
+  --primary-color: #007BFF;   /* header-item a:hover */ 
+  --content-bg-color: #2F303A; /* посуті те саме header-text-color */ 
+}
 
 body {
   font-family: 'Arial', sans-serif;
@@ -19,7 +25,7 @@ body {
 }
 
 .header {
-  background-color: #fff;
+  background-color: var(--header-bg-color);
   padding: 20px 0;
   display: flex;
   justify-content: space-around;
@@ -30,7 +36,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: var(--header-text-color);
 }
 
 nav {
@@ -52,13 +58,13 @@ nav {
 }
 .header-item a {
   text-decoration: none;
-  color: #333;
+  color: var(--header-text-color);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .header-item a:hover {
-  color: #007BFF;
+  color: var(--primary-color);
 }
 
 .header-list:last-of-type {
@@ -75,19 +81,29 @@ main {
 }
 
 .content-up {
-  background-color: #2F303A;
+  background-color: var(--content-bg-color);
   color: white;
   padding: 100px 20px;
   text-align: center;
+  width: 1200px;
+  height: 600px;
+  padding-top: 180px;
+  
 }
+.content-up h2 {
+font-size: 44px;}
 
 .button1 {
   background-color: #007BFF;
   color: white;
   padding: 10px 20px;
+  width: 216px;
+  height: 50px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  
 }
 
 .button1:hover {
@@ -107,13 +123,17 @@ main {
   max-width: 350px;
   /* padding: auto; */
   margin: 10px 30px 10px 10px;
+  list-style:none;
 }
 .services-item-h3{
   color: #212121;
+  font-size: 14px;
+  line-height: 16.41px;
 }
 .services-item-a{
   color: #757575;
   font-size: 14px;
+  line-height: 24pxpx;
 }
 .services-item:nth-last-child(3n) {
   margin-right: 0;
@@ -163,6 +183,39 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: left;
+  
+}
+
+address{
+  padding: 20px;
+  margin: 10px; 
+}
+address a {
+  text-decoration: none; 
+}
+.address-a{
+color: #ffff;
+text-decoration: none;
+}
+.address-a2{
+  color: gray;
+  }
+address li {
+  list-style: none; 
+  margin-bottom: 10px;
+}
+address ul{
+  margin: 0;
+  padding: 0;
+}
+.blue {
+  color: #007bff;
+}
+.white {
+  color: #ffffff; 
+}
+.black{
+  color: #000000;
 }
 
 
@@ -188,10 +241,11 @@ margin-left: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+ 
 }
 .my-shop ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  list-style:none;
 }
