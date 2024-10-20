@@ -89,6 +89,7 @@ main {
   width: 1200px;
   height: 600px;
   padding-top: 180px;
+
   
 }
 .content-up h2 {
@@ -123,7 +124,7 @@ font-size: 44px;}
   /* margin-bottom: 100px ; */
   max-width: 350px;
   /* padding: auto; */
-  margin: 10px 30px 10px 10px;
+  margin: 10px 10px -40px 10px;
   list-style:none;
 }
 .services-item-h3{
@@ -134,7 +135,7 @@ font-size: 44px;}
 .services-item-a{
   color: #757575;
   font-size: 14px;
-  line-height: 24pxpx;
+  line-height: 24px;
 }
 .services-item:nth-last-child(3n) {
   margin-right: 0;
