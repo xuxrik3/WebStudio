@@ -4,11 +4,39 @@
   box-sizing: border-box;
 }
 :root {
-  --header-bg-color: #fff;  /* колір фона заголовка */
-  --header-text-color: #333; /* колір заголовка */
-  --primary-color: #007BFF;   /* header-item a:hover */ 
-  --content-bg-color: #2F303A; /* посуті те саме header-text-color */ 
-}
+  --header-bg-color: #fff;       /* колір фона заголовка */
+  --header-border-color:#ECECEC; /*header-border-color  */
+  --header-text-color: #333;     /* колір заголовка */
+  --primary-color: #007BFF;      /* header-item a:hover */ 
+  --content-up-bg-color: #2F303A;     /* посуті те саме header-text-color */ 
+  --content-up-color: white;          /* content-up-color */
+  --button1-bg-color: #007BFF;      /* button1  */
+  --button1--color: white;          /* button1  */
+  --button1-bg-color-hover:#0056b3; /* button1-bg-color-hover */ 
+  --services-item-h3-color:#212121;   /* services-item-h3 */
+  --services-item-a-color: #757575;   /*services-item-a  */
+  --foto-bg-color:#ffffff;      /* Чим займаємось */
+  --my_teams-color:#F5F4FA;     /* Наша команда */
+  --my_teams-p-bg-color:#757575;/* Наша команда */
+  --footer-bg-color: #2F303A;/*footer */
+  --footer-color: white;   /*  footer*/
+  --address-a-color:#ffff; /*  footer*/
+  --address-a2-color: gray;/*  footer*/
+  --blue-color:#007bff;  /* (Web)Studio footer */ 
+  --white-color:#ffffff; /* Web(Studio) footer*/
+  --black-color:#000000; /* Web(Studio) header*/
+
+/* PORTFOLIO  */
+  --button-pt-bg-color: #F5F4FA;/*  */
+  --button-pt-color: #212121;   /*  */
+  --button-pt-hover-bg-color:#2196F3;/*  */
+  --button-pt-hover-color:#FFFFFF;/*  */
+  --my-shop-bg-color:#fff; /*  */
+  --poster-border:#EEEEEE;/*  */
+  --poster-p-color:#757575; /*  */
+    /*  */    
+
+} 
 
 body {
   font-family: 'Arial', 'Roboto', sans-serif;
@@ -29,7 +57,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-color:  #ECECEC;
+  border-color: var(--header-border-color);
   border: 1px;
 }
 
@@ -82,8 +110,8 @@ main {
 }
 
 .content-up {
-  background-color: var(--content-bg-color);
-  color: white;
+  background-color: var(--content-up-bg-color);
+  color: var(--content-up-color);
   padding: 100px 20px;
   text-align: center;
   width: 1200px;
@@ -96,8 +124,8 @@ main {
 font-size: 44px;}
 
 .button1 {
-  background-color: #007BFF;
-  color: white;
+  background-color: var(--button1-bg-color);
+  color:var(--button1--color);
   padding: 10px 20px;
   width: 216px;
   height: 50px;
@@ -109,7 +137,7 @@ font-size: 44px;}
 }
 
 .button1:hover {
-  background-color: #0056b3;
+  background-color: var(--button1-bg-color-hover);
 }
 .services-list{
   display: flex;
@@ -128,12 +156,12 @@ font-size: 44px;}
   list-style:none;
 }
 .services-item-h3{
-  color: #212121;
+  color: var(--services-item-h3-color);
   font-size: 14px;
   line-height: 16.41px;
 }
 .services-item-a{
-  color: #757575;
+  color: var(--services-item-a-color);
   font-size: 14px;
   line-height: 24px;
 }
@@ -145,7 +173,7 @@ font-size: 44px;}
 }
 /* Чим займаємось  */
 .foto{
-  background-color: #ffffff;
+  background-color: var(--foto-bg-color);
   padding: 40px 20px;
   text-align: center;
 }
@@ -162,7 +190,7 @@ font-size: 44px;}
 
 /* Наша комaнда */
 .my_teams {
-  background-color: #F5F4FA;
+  background-color: var(--my_teams-bg-color);
   padding: 40px 20px;
   text-align: center;
 }
@@ -181,13 +209,13 @@ font-size: 44px;}
   font-size: 16px;
 }
 .my_teams p{
-  color: #757575;
+  color:var(--my_teams-p-color);
   font-size: 16px;
 }
 
 footer {
-  background-color: #2F303A;
-  color: white;
+  background-color: var(--footer-bg-color) ;
+  color:var(--footer-color) ;
   padding: 20px 0;
   text-align: left;
   
@@ -208,11 +236,11 @@ address a {
   font-size: 14px;
 }
 .address-a{
-color: #ffff;
+color: var(--address-a-color);
 text-decoration: none;
 }
 .address-a2{
-  color: gray;
+  color:var(--address-a2-color) ;
   }
 address li {
   list-style: none; 
@@ -223,16 +251,14 @@ address ul{
   padding: 0;
 }
 .blue {
-  color: #007bff;
+  color:var(--blue-color);
 }
 .white {
-  color: #ffffff; 
+  color:var(--white-color) ; 
 }
 .black{
-  color: #000000;
+  color:var(--black-color) ;
 }
-
-
 
 /* PORTFOLIO */
 
@@ -241,8 +267,8 @@ margin-left: 300px;
 padding: 20px 25px;
 }
 .button-pt{
-  background-color: #F5F4FA;
-  color: #212121;
+  background-color:var(--button-pt-bg-color);
+  color:var(--button-pt-color);
   border: 0;
   border-radius: 4px;
   padding: 10px 27px;
@@ -251,12 +277,12 @@ padding: 20px 25px;
   
 }
 .button-pt:hover{
-  background-color: #2196F3;
-  color: #FFFFFF;
+  background-color:var(--button-pt-hover-bg-color);
+  color:var(--button-pt-hover-color); 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .my-shop{
-  background-color: #fff;
+  background-color:var(--my-shop-bg-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -276,7 +302,7 @@ padding: 20px 25px;
 .poster{
   width: 370px;
   height: 430px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--poster-border);
   margin: 2px;
   padding: 0 px;
   overflow: hidden;
@@ -309,7 +335,7 @@ padding: 20px 25px;
 }
 
 .poster p {
-  color: #757575;
+  color: var(--poster-p-color);
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
