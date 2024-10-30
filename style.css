@@ -16,8 +16,10 @@
   --services-item-h3-color:#212121;   /* services-item-h3 */
   --services-item-a-color: #757575;   /*services-item-a  */
   --foto-bg-color:#ffffff;      /* Чим займаємось */
-  --my_teams-color:#F5F4FA;     /* Наша команда */
-  --my_teams-p-bg-color:#757575;/* Наша команда */
+  --foto-color:#212121;
+  --my_teams-bg-color:#F5F4FA; /* Наша команда */
+  --my_team-color:#212121;
+  --my_teams-p-color:#757575;/* Наша команда */
   --footer-bg-color: #2F303A;/*footer */
   --footer-color: white;   /*  footer*/
   --address-a-color:#ffff; /*  footer*/
@@ -48,7 +50,7 @@ h1,h2,h3,h4,p,ul,li,a,button{
   padding: 0;
 }
 body {
-  font-family:  'Roboto', sans-serif;
+font-family:  'Roboto', sans-serif;
  background-color:var(--header-bg-color);
  color:var(--poster-p-color);
  font-size:14px ;
@@ -93,12 +95,14 @@ body {
   justify-content: space-between;
 }
 .header-item a {
-  text-decoration: none;
   color: var(--header-text-color);
   font-weight: 500;
   transition: color 0.3s ease;
+  margin-right: 50px;
 }
-
+.header-list:last-of-type {
+  margin-left: 215px ;
+}
 .header-item a:hover {
   color: var(--primary-color);
 }
@@ -112,19 +116,19 @@ body {
 .content-up {
   background-color: var(--content-up-bg-color);
   color: var(--content-up-color);
-  padding: 100px 20px;
+  padding: 180px 20px;
   text-align: center;
-  padding-top: 180px;
-
-  
 }
 .content-up h2 {
-font-size: 44px;}
+font-size: 44px;
+}
 
 .button1 {
+ 
   background-color: var(--button1-bg-color);
   color:var(--button1--color);
   padding: 10px 20px;
+  margin-top: 30px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -135,21 +139,18 @@ font-size: 44px;}
 .button1:hover {
   background-color: var(--button1-bg-color-hover);
 }
-.services-list{
-  display: flex;
-  flex-wrap: wrap;
+ /* Особливості  */
+.services{
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .services-list{
   display: flex;
   flex-wrap: nowrap;
 }
 .services-item{
-  /* margin-right: 15px; */
-  /* margin-bottom: 100px ; */
-  max-width: 350px;
-  /* padding: auto; */
-  margin: 10px 10px -40px 10px;
-  list-style:none;
+ max-width: 350px;
+ margin: 10px auto; 
 }
 .services-item-h3{
   color: var(--services-item-h3-color);
@@ -160,54 +161,64 @@ font-size: 44px;}
   color: var(--services-item-a-color);
   font-size: 14px;
   line-height: 24px;
+  padding-top: 10px;
+  padding-right: 30px;
 }
-.services-item:nth-last-child(3n) {
+/* .services-item:nth-last-child(3n) {
   margin-right: 0;
-}
-.services{
-  margin-bottom: 100px;
-}
+} */
+
 /* Чим займаємось  */
 .foto{
   background-color: var(--foto-bg-color);
+  color: var(--foto-color);
   padding: 40px 20px;
   text-align: center;
 }
+.foto h2{
+  font-size: 36px;
+}
 .foto ul{
-  list-style-type: none;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
 }
-/* .foto li{
-  display: flex;
-  flex-wrap: nowrap;
-} */
+
 
 /* Наша комaнда */
 .my_teams {
   background-color: var(--my_teams-bg-color);
-  padding: 40px 20px;
+  color: var(--my_team-color);
+  /* padding: 40px 20px; */
   text-align: center;
-}
 
+}
+.my_teams h2{
+  font-size: 36px;
+  padding-top: 94px;
+}
 .my_teams ul {
-  list-style-type: none;
-  padding: 0;
   display: flex;
   flex-wrap: nowrap; 
   justify-content: space-between; 
+  padding-top: 50px;
+ 
 }
-
 .my_teams li {
   margin: 10px; 
   text-align: center; 
   font-size: 16px;
+  margin-bottom: 94px;
+  
+  border-radius: 0px 0px 4px 4px;
+  background: #FFF;
+  height: 368px;
 }
 .my_teams p{
   color:var(--my_teams-p-color);
   font-size: 16px;
 }
+ 
 
 footer {
   background-color: var(--footer-bg-color) ;
@@ -242,10 +253,6 @@ address li {
   list-style: none; 
   margin-bottom: 10px;
 }
-address ul{
-  margin: 0;
-  padding: 0;
-}
 .blue {
   color:var(--blue-color);
 }
@@ -265,12 +272,11 @@ padding: 20px 25px;
 .button-pt{
   background-color:var(--button-pt-bg-color);
   color:var(--button-pt-color);
-  border: 0;
   border-radius: 4px;
   padding: 10px 27px;
   font-weight: 500;
   cursor: pointer;
-  
+  border: 0px;
 }
 .button-pt:hover{
   background-color:var(--button-pt-hover-bg-color);
@@ -290,36 +296,20 @@ padding: 20px 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style:none;
   gap: 20px;
   padding: 0;
 }
 
 .poster{
   width: 370px;
-  height: 430px;
+  height: 404px;
   border: 1px solid var(--poster-border);
   margin: 2px;
-  padding: 0 px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* display: flex; */
   flex-direction: column;
 }
 
-/* .my-shop h3{
-  color: #212121;
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 700;
-   overflow: hidden;
-}
-.my-shop p{
-  color: #757575;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
-} */
 
 .poster h3 {
   color: #212121;
