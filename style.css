@@ -7,6 +7,7 @@
   --header-bg-color: #fff;       /* колір фона заголовка */
   --header-border-color:#ECECEC; /*header-border-color  */
   --header-text-color: #333;     /* колір заголовка */
+  --header-header-item-two-last:#757575; 
   --primary-color: #007BFF;      /* header-item a:hover */ 
   --content-up-bg-color: #2F303A;     /* посуті те саме header-text-color */ 
   --content-up-color: white;          /* content-up-color */
@@ -94,14 +95,15 @@ font-family:  'Roboto', sans-serif;
   align-items: center;
   justify-content: space-between;
 }
+.header-list:last-of-type {
+  margin-left: 215px ;
+  color: var(--header-header-item-two-last);
+}
 .header-item a {
   color: var(--header-text-color);
   font-weight: 500;
   transition: color 0.3s ease;
   margin-right: 50px;
-}
-.header-list:last-of-type {
-  margin-left: 215px ;
 }
 .header-item a:hover {
   color: var(--primary-color);
@@ -114,17 +116,23 @@ font-family:  'Roboto', sans-serif;
 
 
 .content-up {
-  background-color: var(--content-up-bg-color);
+  /* background-color: var(--content-up-bg-color); */
+  background-image: url(./img/img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
   color: var(--content-up-color);
   padding: 180px 20px;
   text-align: center;
+
 }
 .content-up h2 {
 font-size: 44px;
 }
 
 .button1 {
- 
   background-color: var(--button1-bg-color);
   color:var(--button1--color);
   padding: 10px 20px;
@@ -136,7 +144,7 @@ font-size: 44px;
   
 }
 
-.button1:hover {
+.just-btn:hover {
   background-color: var(--button1-bg-color-hover);
 }
  /* Особливості  */
