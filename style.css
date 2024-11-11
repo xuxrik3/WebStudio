@@ -323,9 +323,9 @@ footer {
   
   
 }
-.footer--{
+/* .footer--{
   
-}
+} */
 .logo-footer{
   margin-left: 30px;
   margin-top:  40px; 
@@ -378,19 +378,18 @@ font-size: 14px;
 text-transform: uppercase;
 padding-left  : 110px;
 } */
-.footer-a  {
-  background-color: var(--footer-a-bg) ;
-  width: 40px;
-  height: 40px;
 
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  
-}
+  .footer-a  {
+    background-color: var(--footer-a-bg) ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    
+  }
 .footer-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
 }
