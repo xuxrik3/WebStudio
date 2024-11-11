@@ -368,7 +368,7 @@ padding-left  : 110px;
   background-color: var(--footer-a-bg) ;
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Круглый фон */
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
