@@ -45,6 +45,7 @@
 
   /*  */
   --clients-bg-color: #FFF;
+  --footer--i: #FFF;
 
 } 
 a{
@@ -74,7 +75,7 @@ font-family:  'Roboto', sans-serif;
 
 .header {
   background-color: var(--header-bg-color);
-  padding: 20px 0;
+  padding: 20px 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,9 +89,6 @@ font-family:  'Roboto', sans-serif;
   font-family: 'Raleway';
 }
 
-.header-list {
-  display: flex;
-}
 .header-wrap{
   display: flex; /* робить контейнер гнучким */
   align-items: center;  /* розміщує ПО ГОРИЗОНТАЛІ*/
@@ -103,6 +101,7 @@ font-family:  'Roboto', sans-serif;
 }
 .header-list:last-of-type {
   margin-left: 215px ;
+ 
   color: var(--header-header-item-two-last);
 }
 .header-item a {
@@ -110,13 +109,23 @@ font-family:  'Roboto', sans-serif;
   font-weight: 500;
   transition: color 0.3s ease;
   margin-right: 50px;
+  font-size: 15px;
+ 
 }
-.header-item a:hover {
-  color: var(--primary-color);
+.header-list {
+  display: flex;
+  align-items: center;
 }
 
-.header-item a {
-  font-size: 15px;
+/* .header-item a >img{
+  color: #757575;
+  width: 16px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-right: 5px
+} */
+.header-item a:hover {
+  color: var(--primary-color);
 }
 
 
@@ -323,15 +332,21 @@ footer {
   
   
 }
-/* .footer--{
-  
-} */
 .logo-footer{
   margin-left: 30px;
   margin-top:  40px; 
   padding-right: 110px;
   font-size: 24px;
   font-family: 'Raleway';
+}
+.footer-- i{
+  color:var(--footer--i) ;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 110px;
 }
 address{
   display: flex;
@@ -372,13 +387,6 @@ address li {
   margin-right:825px;
  
 }
-/* .footer-text  {
-display: flex;
-font-size: 14px;
-text-transform: uppercase;
-padding-left  : 110px;
-} */
-
   .footer-a  {
     background-color: var(--footer-a-bg) ;
     width: 40px;
