@@ -284,6 +284,38 @@ justify-content: center
   padding-top: 50px;
  
 }
+.my-teams-social{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 30px;
+}
+.my-teams-social-a{
+  background-color: var(--footer-a-bg) ;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.my-teams-social a:hover  {
+  background-color: var(--footer-social-a-hover-img) ;
+  color: #fff;
+}
+/* .my-teams-social a:hover:nth-child(1){
+
+}
+.my-teams-social a:nth-child(2){
+
+}
+.my-teams-social a:nth-child(3){
+
+}
+.my-teams-social a:nth-child(4){
+
+} */
 /* .social-link a img{
 
  
@@ -372,6 +404,7 @@ address{
   justify-content: space-between;
   align-items: flex-start; 
   padding: 20px 0;
+  width: 1200px;
 }
 address a {
   color: var(--address-a-color);
@@ -419,6 +452,29 @@ address li {
   }
 .footer-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
+}
+
+#intup-email{
+  margin: 0px -785px;
+  background-color: #2F303A ;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+width: 358px;
+height: 50px;
+}  
+.bnt-intup-email{
+  margin-left: 820px;
+  align-items: center;  
+  display: inline-flex; 
+  justify-content: center;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+.bnt-intup-email img{
+  padding-left: 10px;
 }
 /* PORTFOLIO */
 
