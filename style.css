@@ -249,31 +249,21 @@ p.services-item-a {
   justify-content: space-between;
   padding-top: 50px;
   position: relative;
-  
-}
-.foto-li-text1{
-  position: absolute;
-  text-align: center;
+  margin: 10px;
 
 }
 
-.foto-li-text1 span{
-  color: #fff;
-  font-size: 14px;
-  line-height: 550px;
-  font-weight: 700;
-  background-color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  
-  
+.foto-li-text{
+position: absolute;
+width: 370px;
+background-color: rgba(0, 0, 0, 0.6); 
+color: white;
+padding: 10px;
+font-size: 14px;
+display: flex;
+justify-content: center
 }
-.foto-li-text2{
-  position: absolute;
-}
-.foto-li-text3{
-  position: absolute;
-}
+
 
 /* Наша комaнда */
 .my_teams {
@@ -294,6 +284,11 @@ p.services-item-a {
   padding-top: 50px;
  
 }
+/* .social-link a img{
+
+ 
+} */
+
 .my_teams li {
   margin: 10px; 
   text-align: center; 
