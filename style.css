@@ -28,6 +28,11 @@
   --blue-color:#007bff;  /* (Web)Studio footer */ 
   --white-color:#ffffff; /* Web(Studio) footer*/
   --black-color:#000000; /* Web(Studio) header*/
+  --clients-li--ul-hover:#2196F3;
+  --bg-bnt-intup-email: #2196F3;
+ --bg-intup-email: #2F303A;
+ --bnt-intup-email-color: #fff;
+ --clients-h2-color: #212121;
 
 /* PORTFOLIO  */
   --button-pt-bg-color: #F5F4FA;/*  */
@@ -241,7 +246,7 @@ p.services-item-a {
   padding: 40px 20px;
   text-align: center;
 }
-.foto h2{
+.foto h1{
   font-size: 36px;
 }
 .foto ul{
@@ -289,6 +294,7 @@ justify-content: center
   align-items: center;
   text-align: center;
   margin-left: 30px;
+
 }
 .my-teams-social-a{
   background-color: var(--footer-a-bg) ;
@@ -302,24 +308,8 @@ justify-content: center
 }
 .my-teams-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
-  color: #fff;
 }
-/* .my-teams-social a:hover:nth-child(1){
 
-}
-.my-teams-social a:nth-child(2){
-
-}
-.my-teams-social a:nth-child(3){
-
-}
-.my-teams-social a:nth-child(4){
-
-} */
-/* .social-link a img{
-
- 
-} */
 
 .my_teams li {
   margin: 10px; 
@@ -329,7 +319,8 @@ justify-content: center
   
   border-radius: 0px 0px 4px 4px;
   background: var(--my_teams-li-color);
-  height: 368px;
+  height: 388px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);;
 }
 .my_teams p{
   color:var(--my_teams-p-color);
@@ -358,7 +349,7 @@ justify-content: center
 .clients h2{
   margin-top: 94px;
   margin-bottom: 50px;
-  color: #212121;
+  color:var(--clients-h2-color) ;
   font-size: 36px;
 }
 .clients-li {
@@ -371,7 +362,13 @@ margin-right: 30px;
  border-radius: 4px;
  
 }
+.clients-li:hover{
+  color: var(--clients-li--ul-hover);
 
+}
+.clients ul:hover{
+  color: var(--clients-li--ul-hover);
+}
 
 /* footer */
 
@@ -456,7 +453,7 @@ address li {
 
 #intup-email{
   margin: 0px -785px;
-  background-color: #2F303A ;
+  background-color: var(--bg-intup-email);
   border: 1px solid rgba(255, 255, 255, 0.3);
 width: 358px;
 height: 50px;
@@ -467,11 +464,12 @@ height: 50px;
   display: inline-flex; 
   justify-content: center;
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  background: #2196F3;
+  /* width: 200px;
+  height: 50px; */
+  padding: 10px 20px ;
+  background: var(--bg-bnt-intup-email); 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: var(--bnt-intup-email-color);
 }
 .bnt-intup-email img{
   padding-left: 10px;
