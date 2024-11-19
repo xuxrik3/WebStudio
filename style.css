@@ -122,13 +122,11 @@ font-family:  'Roboto', sans-serif;
   align-items: center;
 }
 
-/* .header-item a >img{
+.header-item img{
   color: #757575;
-  width: 16px;
-  height: 12px;
   flex-shrink: 0;
-  margin-right: 5px
-} */
+  margin-right: 6px
+}
 .header-item a:hover {
   color: var(--primary-color);
 }
@@ -421,12 +419,27 @@ address li {
 }
 .blue {
   color:var(--blue-color);
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Raleway';
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 .white {
   color:var(--white-color) ; 
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Raleway';
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 .black{
   color:var(--black-color) ;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Raleway';
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 
 .footer-social {
