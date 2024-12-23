@@ -306,6 +306,7 @@ justify-content: center
 }
 .my-teams-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
+  
 }
 
 
