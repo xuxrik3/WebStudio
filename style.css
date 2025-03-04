@@ -72,7 +72,7 @@ font-family:  'Roboto', sans-serif;
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
   border: 1px solid red;
@@ -103,6 +103,8 @@ font-family:  'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
 }
 .header-list:last-of-type {
   margin-left: 215px ;
