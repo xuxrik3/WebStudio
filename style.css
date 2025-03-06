@@ -340,17 +340,17 @@ justify-content: center
   background-color: var(--footer-social-a-hover-img) ;
 
 }
-.instagram1 {
+/* .instagram1 {
   width: 20px;height: 20px;
-  background-image: url('./img/instagram1.svg'); /* Первая иконка */
+  background-image: url('./isymboldeftsmg/instagram1.svg');
   background-size: cover;
   background-position: center;
   transition: background-image 0.3s ease-in-out;
 }
 
 .instagram1:hover {
-  background-image: url('./img/instagram2.svg'); /* Вторая иконка при наведении */
-}
+  background-image: url('./symboldefts/instagram2.svg'); /
+} */
 
 .instagram1:hover {
 
@@ -412,7 +412,7 @@ margin-right: 30px;
 }
 .clients-li:hover {
   color: var(--clients-li--ul-hover);
-  
+
 
 }
 .clients ul:hover{
@@ -532,7 +532,7 @@ height: 50px;
   height: 50px; */
   padding: 10px 20px ;
   background: var(--bg-bnt-intup-email); 
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   color: var(--bnt-intup-email-color);
 }
 .bnt-intup-email img{ 
