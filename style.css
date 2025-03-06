@@ -8,7 +8,7 @@
   --header-border-color:#ECECEC; /*header-border-color  */
   --header-text-color: #333;     /* колір заголовка */
   --header-header-item-two-last:#757575; 
-  --primary-color: #007BFF;      /* header-item a:hover */ 
+  --primary-color: #2196F3;      /* header-item a:hover */ 
   --content-up-bg-color: #2F303A;     /* посуті те саме header-text-color */ 
   --content-up-color: white;          /* content-up-color */
   --button1-bg-color: #007BFF;      /* button1  */
@@ -22,6 +22,7 @@
   --my_team-color:#212121;
   --my_teams-p-color:#757575;/* Наша команда */
   --footer-bg-color: #2F303A;/*footer */
+  --footer-a-bg: rgba(255, 255, 255, 0.1);
   --footer-color: white;   /*  footer*/
   --address-a-color:#ffff; /*  footer*/
   --address-a2-color: gray;/*  footer*/
@@ -44,7 +45,7 @@
   --poster-p-color:#757575; /*  */
   --services-item-icon-color: #F5F4FA;  /*  */ 
   --my_teams-li-color  :#fff; 
-  --footer-a-bg:rgba(255, 255, 255, 0.1);
+  
   --footer-social-a-hover-img: #2196F3;
   --poster-h3:#212121;
 
@@ -75,17 +76,17 @@ font-family:  'Roboto', sans-serif;
   width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header {
   background-color: var(--header-bg-color);
   padding: 20px 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-color: var(--header-border-color);
-  border: 1px;
+  /* border: 1px; */
 }
 
 .logo {
@@ -103,25 +104,52 @@ font-family:  'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
 }
+
 .header-list:last-of-type {
   margin-left: 215px ;
  
   color: var(--header-header-item-two-last);
 }
+.header-item {
+  position: relative; 
+  display: inline-block;
+  padding-bottom: 5px; 
+  
+}
 .header-item a {
   color: var(--header-text-color);
   font-weight: 500;
-  transition: color 0.3s ease;
-  margin-right: 50px;
+  transition: color 1s ease;
   font-size: 15px;
- 
+  /* position: relative; */
+  text-decoration: none; 
+  padding: 10px 15px;  
+  
 }
+
+.overlay {
+  position: absolute;
+  margin-bottom: 30px;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ;
+  
+}
+
+.header-item:hover .overlay {
+  width: 100%; margin-top: 25px;
+}
+
 .header-list {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: center;
+  list-style: none;            
+  padding: 0;
+  margin: 0;
 }
 
 .header-item img{
@@ -297,7 +325,7 @@ justify-content: center
 
 }
 .my-teams-social-a{
-  background-color: var(--footer-a-bg) ;
+  /* background-color: var(--footer-a-bg) ; */
   width: 40px;
   height: 40px;
   border-radius: 50%; 
@@ -308,9 +336,16 @@ justify-content: center
 }
 .my-teams-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
-  
-}
 
+}
+.instagram2:hover {
+  color: white;
+  background-color: var(--footer-a-bg) ;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+ 
+}
 
 .my_teams li {
   margin: 10px; 
@@ -363,8 +398,9 @@ margin-right: 30px;
  border-radius: 4px;
  
 }
-.clients-li:hover{
+.clients-li:hover {
   color: var(--clients-li--ul-hover);
+  
 
 }
 .clients ul:hover{
@@ -452,8 +488,8 @@ address li {
   margin-right:825px;
  
 }
-  .footer-a  {
-    background-color: var(--footer-a-bg) ;
+.footer-a  {
+    background-color: var(--footer-a-bg);
     width: 40px;
     height: 40px;
     border-radius: 50%; 
@@ -462,7 +498,7 @@ address li {
     justify-content: center;
     margin-left: 10px;
     
-  }
+}
 .footer-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
 }
@@ -487,7 +523,7 @@ height: 50px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--bnt-intup-email-color);
 }
-.bnt-intup-email img{
+.bnt-intup-email img{ 
   padding-left: 10px;
 }
 /* PORTFOLIO */
