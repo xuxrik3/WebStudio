@@ -89,6 +89,8 @@ font-family:  'Roboto', sans-serif;
   /* border: 1px; */
 }
 
+
+
 .logo {
   margin-right: 93px ;
   font-size: 24px;
@@ -338,12 +340,22 @@ justify-content: center
   background-color: var(--footer-social-a-hover-img) ;
 
 }
-.instagram2:hover {
-  color: white;
+.instagram1 {
+  width: 20px;height: 20px;
+  background-image: url('./img/instagram1.svg'); /* Первая иконка */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.instagram1:hover {
+  background-image: url('./img/instagram2.svg'); /* Вторая иконка при наведении */
+}
+
+.instagram1:hover {
+
   background-color: var(--footer-a-bg) ;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; 
+
  
 }
 
