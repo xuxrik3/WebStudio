@@ -288,7 +288,7 @@ p.services-item-a {
 
 }
 
-.foto-li-text{
+/* .foto-li-text{
 position: absolute;
 width: 370px;
 background-color: rgba(0, 0, 0, 0.6); 
@@ -297,8 +297,47 @@ padding: 10px;
 font-size: 14px;
 display: flex;
 justify-content: center
+} */
+.flt1{
+position: absolute;
+width: 370px; height: 70px;
+background-color: rgba(47, 48, 58, 0.80); 
+color: white;
+padding: 10px;
+font-size: 14px;
+align-items: center;
+display: flex;
+justify-content: center;
+z-index: 2;
+margin-top: 225px;
 }
 
+.flt2{
+  position: absolute;
+  width: 370px; height: 70px;
+  background-color: rgba(47, 48, 58, 0.80); 
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 405px;
+  margin-top: 225px;
+  }
+  .flt3{
+    position: absolute; 
+    width: 370px; height: 70px;
+    background-color: rgba(47, 48, 58, 0.80); 
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 225px;
+    }
 
 /* Наша комaнда */
 .my_teams {
@@ -340,6 +379,10 @@ justify-content: center
   background-color: var(--footer-social-a-hover-img) ;
 
 }
+.my-teams-social img:hover  {
+ color: #FFFFFF;
+
+}
 /* .instagram1 {
   width: 20px;height: 20px;
   background-image: url('./isymboldeftsmg/instagram1.svg');
@@ -352,12 +395,6 @@ justify-content: center
   background-image: url('./symboldefts/instagram2.svg'); /
 } */
 
-.instagram1:hover {
-
-  background-color: var(--footer-a-bg) ;
-
- 
-}
 
 .my_teams li {
   margin: 10px; 
@@ -410,13 +447,9 @@ margin-right: 30px;
  border-radius: 4px;
  
 }
-.clients-li:hover {
+.clients-li a img:hover {
   color: var(--clients-li--ul-hover);
 
-
-}
-.clients ul:hover{
-  color: var(--clients-li--ul-hover);
 }
 
 /* footer */
