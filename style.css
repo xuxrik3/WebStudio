@@ -154,15 +154,16 @@ font-family:  'Roboto', sans-serif;
   margin: 0;
 }
 
-.header-item img{
+/* .header-item img{
   color: #757575;
-  flex-shrink: 0;
-  margin-right: 6px
+  flex-shrink: 1;
+ 
 }
-.header-item a:hover {
+.header-item a,img:hover {
   color: var(--primary-color);
+  fill:  var(--primary-color);
 }
-
+ */
 
 
 .content-up {
@@ -250,7 +251,7 @@ p.services-item-a {
   padding-right: 30px;
 
 }
-.services-item-icon img{
+.services-item-icon svg{
   width: 70px;
   height: 70px;
 }
@@ -377,11 +378,9 @@ margin-top: 225px;
 }
 .my-teams-social a:hover  {
   background-color: var(--footer-social-a-hover-img) ;
-
 }
 .my-teams-social img:hover  {
  color: #FFFFFF;
-
 }
 /* .instagram1 {
   width: 20px;height: 20px;
