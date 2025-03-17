@@ -17,28 +17,50 @@
         <a class="logo" href="./index.html">
           <span class="blue">Web</span><span class="black">Studio</span>
         </a>
-        <nav class="navigation ">
+        <nav class="navigation">
           <ul class="header-list">
-            <li class="header-item"><a href="/index.html">Студія</a>
-              <div class="overlay"></div>
-            </li>
-            <li class="header-item"><a href="./pages/portfolio.html">Портфоліо</a>
-              <div class="overlay"></div></li>
-            <li class="header-item"><a href="#">Контакти</a>
-              <div class="overlay"></div></li>
+            <li class="header-item"><a href="/index.html">Студія</a></li>
+            <li class="header-item"><a href="./pages/portfolio.html">Портфоліо</a></li>
+            <li class="header-item"><a href="#">Контакти</a></li>
           </ul>
-          
-          <ul class="header-list contacts" >
-            <li class="header-item contact-group" >
-              <img src="./img/envelope.svg" alt="poczta" >
-              <a href="mailto:info@devstudio.com">nfo@devstudio.com</a></li>
-
-            <li class="header-item contact-group" >
+          <ul class="header-list contacts">
+            <li class="header-item contact-group">
+              <img src="./img/envelope.svg" alt="poczta">
+              <a href="#" data-modal-open>info@devstudio.com</a>
+            </li>
+            <li class="header-item contact-group">
               <img src="./img/smartphone.svg" alt="smartphone">
-              <a href="tel:+380961111111">+380 96 111 11 11</a></li>
-          </ul>   
-        </nav> 
+              <a href="tel:+380961111111">+380 96 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
       </div> 
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+          <button data-modal-close>Закрити</button>
+          <h2>Залиште свої дані, ми вам передзвонимо</h2>
+          <form>
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" required><br>
+      
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" required><br>
+      
+            <label for="email">Пошта</label>
+            <input type="email" id="email" required><br>
+      
+            <label for="comment">Коментар</label>
+            <textarea id="comment"></textarea><br>
+      
+            <label>
+              <input type="checkbox" required> Погоджуюсь з розсилкою та приймаю <a href="#">Умови договору</a>
+            </label>
+      
+            <button type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
+      
     </header>
 
 
