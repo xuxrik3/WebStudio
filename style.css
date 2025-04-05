@@ -502,8 +502,10 @@ margin-top: 225px;
 }
 .clients-li a svg:hover {
 --color2:var(--color-clients-li-a-svg);
-/* border-color: var(--color-clients-li-a-svg); */
 
+}
+.clients-li:hover {
+  border-color: var(--color-clients-li-a-svg);
 }
 .clients-icon{
   width: 106px;
