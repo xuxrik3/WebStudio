@@ -8,22 +8,45 @@
   --header-border-color:#ECECEC; /*header-border-color  */
   --header-text-color: #333;     /* колір заголовка */
   --header-header-item-two-last:#757575; 
+
+
   --primary-color: #2196F3;      /* header-item a:hover */ 
   --content-up-bg-color: #2F303A;     /* посуті те саме header-text-color */ 
   --content-up-color: white;          /* content-up-color */
+
+
   --button1-bg-color: #007BFF;      /* button1  */
   --button1--color: white;          /* button1  */
   --button1-bg-color-hover:#0056b3; /* button1-bg-color-hover */ 
+
+
   --services-item-h3-color:#212121;   /* services-item-h3 */
   --services-item-a-color: #757575;   /*services-item-a  */
   --foto-bg-color:#ffffff;      /* Чим займаємось */
   --foto-color:#212121;
+
+  --social-icon-hover-color4:#ffff;
+  --social-icon-hover-color2:#ffff;
+
+  --fit1:#ffff;
+  --fit1-bg:rgba(47, 48, 58, 0.80);
+  --fit2:#ffff;
+  --fit2-bg:rgba(47, 48, 58, 0.80);
+  --fit3:#ffff;
+  --fit3-bg:rgba(47, 48, 58, 0.80);
+
   --my_teams-bg-color:#F5F4FA; /* Наша команда */
   --my_team-color:#212121;
   --my_teams-p-color:#757575;/* Наша команда */
+  --my-teams-social-svg-hover-fill:#ffff;
+
   --footer-bg-color: #2F303A;/*footer */
   --footer-a-bg: rgba(255, 255, 255, 0.1);
   --footer-color: white;   /*  footer*/
+  --footer-a-bg-color1:rgba(255, 255, 255, 0.10);
+  --footer-a-bg-color2:#fff;
+  --footer-icon--color4:#ffff;
+
   --address-a-color:#ffff; /*  footer*/
   --address-a2-color: gray;/*  footer*/
   --blue-color:#007bff;  /* (Web)Studio footer */ 
@@ -356,8 +379,8 @@ justify-content: center
 .flt1{
 position: absolute;
 width: 370px; height: 70px;
-background-color: rgba(47, 48, 58, 0.80); 
-color: white;
+background-color:var(--fit1-bg);  
+color:var(--fit1-bg); 
 padding: 10px;
 font-size: 14px;
 align-items: center;
@@ -370,8 +393,8 @@ margin-top: 225px;
 .flt2{
   position: absolute;
   width: 370px; height: 70px;
-  background-color: rgba(47, 48, 58, 0.80); 
-  color: white;
+  background-color: var(--fit2-bg); 
+  color: var(--fit2) ;
   padding: 10px;
   font-size: 14px;
   align-items: center;
@@ -383,8 +406,8 @@ margin-top: 225px;
   .flt3{
     position: absolute; 
     width: 370px; height: 70px;
-    background-color: rgba(47, 48, 58, 0.80); 
-    color: white;
+    background-color: var(--fit3-bg);
+    color: var(--fit3) ;
     padding: 10px;
     font-size: 14px;
     align-items: center;
@@ -434,7 +457,7 @@ margin-top: 225px;
   --color1: var(--footer-social-a-hover-img) ;
   width: 40px;
   height: 40px;
-  fill:#ffff;
+  fill:var(--my-teams-social-svg-hover-fill) ;
 }
 
 .my_teams li {
@@ -460,8 +483,8 @@ margin-top: 225px;
 .social-icon:hover{
   width: 20px;
   height: 20px;
-  --color4:#ffff;
-  --color2:#ffff;
+  --color4: var(--social-icon-hover-color4) ;
+  --color2:var(--social-icon-hover-color2);
 }
 
 
@@ -592,20 +615,26 @@ address li {
   margin-right:825px;
  
 }
-.footer-a  {
-    background-color: var(--footer-a-bg);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    
+
+
+.footer-a svg:hover {
+  --color1:var(--footer-social-a-hover-img);
 }
-.footer-social a:hover  {
-  background-color: var(--footer-social-a-hover-img) ;
+
+.footer-a svg {
+  width: 40px; 
+  height: 40px; 
+  fill: var(--footer-a-bg-color1);
+  transition: fill 0.3s ease;
+  --color1: var(--footer-a-bg-color1);
+  --color2: var(--footer-a-bg-color2);
+  margin-left: 10px;
 }
+
+/* .footer-a:hover svg {
+  fill:rgba(255, 255, 255, 0.10);
+} */
+
 
 #intup-email{
   margin: 0px -785px;
@@ -633,7 +662,7 @@ height: 50px;
 .footer-icon {
   width: 20px;
   height: 20px;
-  --color4: #ffff;
+  --color4: var(--footer-icon--color4);
 }
 /* PORTFOLIO */
 
