@@ -26,7 +26,7 @@
           <ul class="header-list contacts">
             <li class="header-item contact-group">
               <svg class="icon1"><use href="./img/symbol-defs.svg#icon-envelope" ></use></svg>
-              <a href="#" data-modal-open>info@devstudio.com</a>
+              <a href="#">info@devstudio.com</a>
             </li>
             <li class="header-item contact-group">
               <svg class="icon2"><use href="./img/symbol-defs.svg#icon-smartphone" ></use></svg>
@@ -35,38 +35,7 @@
           </ul>
         </nav>
       </div> 
-      <div class="modal is-hidden" data-modal>
-        <div class="modal-content">
-         
-          <button data-modal-close class="close-modal">
-            <svg class="icon2"><use href="./img/symbol-defs.svg#icon-close-black" ></use></svg>
-              
-          </button>
-          <h2>Залиште свої дані, ми вам передзвонимо</h2>
-          <form>
-          <div class="modal-form">
-            <label for="name">Ім'я</label><br>
-            <input type="text" id="modal-name" required "><br>
-      
-            <label for="phone">Телефон</label><br>
-            <input type="tel" id="modal-phone" required><br>
-      
-            <label for="email">Пошта</label><br>
-            <input type="email" id="modal-email" required><br>
-      
-            <label for="comment">Коментар</label><br>
-            <textarea id="modal-comment"></textarea><br>
-          </div>
-            <label class="modal-form-checkboks">
-              <input type="checkbox" > Погоджуюсь з розсилкою та приймаю
-              <a href="#">Умови договору</a>
-            </label><br>
-            <button type="submit" class="modal-button">Відправити</button>
-          </form>
-        </div>
-      </div>
-      
-    </header>
+     
 
     
     
@@ -75,8 +44,41 @@
       <section class="content-up">
         <div class="container">
         <h2>Ефективні рішення для<br> вашого бізнесу</h2>
-        <button class="just-btn" type="button">Замовити послугу</button>
+        <button class="just-btn" type="button"  data-modal-open>Замовити послугу</button>
         </div>
+
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+           
+            <button data-modal-close class="close-modal">
+              <svg class="icon2"><use href="./img/symbol-defs.svg#icon-close-black" ></use></svg>
+                
+            </button>
+            <h2>Залиште свої дані, ми вам передзвонимо</h2>
+            <form>
+            <div class="modal-form">
+              <label for="name">Ім'я</label><br>
+              <input type="text" id="modal-name" required "><br>
+        
+              <label for="phone">Телефон</label><br>
+              <input type="tel" id="modal-phone" required><br>
+        
+              <label for="email">Пошта</label><br>
+              <input type="email" id="modal-email" required><br>
+        
+              <label for="comment">Коментар</label><br>
+              <textarea id="modal-comment"></textarea><br>
+            </div>
+              <label class="modal-form-checkboks">
+                <input type="checkbox" > Погоджуюсь з розсилкою та приймаю
+                <a href="#">Умови договору</a>
+              </label><br>
+              <button type="submit" class="modal-button">Відправити</button>
+            </form>
+          </div>
+        </div>
+        
+      </header>
       </section>
  
       <!-- Особливості -->
